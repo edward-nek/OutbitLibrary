@@ -1,0 +1,100 @@
+/*single.html.twig*/
+
+.heads-1{
+    background: #2C2726;
+    height: 60px;
+    float: left;
+    color: white;
+    text-align: center;
+    width: 85%;
+}
+
+.heads-2{
+    background: #2C2726;
+    height: 60px;
+    float: left;
+    color: white;
+    text-align: center;
+    width: 15%;
+}
+
+.head-a{
+    margin-top: 10px;
+    background: black;
+    color: white;
+    border-color: black;
+    height: 40px;
+    width: 80%;
+    font-weight: lighter;
+    border-radius: 15px;
+    text-align: left;
+    padding-left: 20px;
+    outline: none;
+}
+.head-b{
+    background: #DB001B;
+    color: white;
+    border-color: #DB001B;
+    height: 60px;
+    width: 100%;
+    font-weight: lighter;
+    position: relative;
+    outline: none;
+}
+
+.head-a:hover{
+    color: #BF0017;
+}
+.head-b:hover{
+    background: #BF0017;
+    border-color: #BF0017;
+}
+
+.bl-ob{
+    height: 100%;
+    width: 50%;
+    float: left;
+    color: black;
+    text-align: left;
+    padding-top: 30px;
+}
+
+.photo{
+    width: 95%;
+}
+
+.ha{
+    margin-top: 60px;
+    fond-size: 35px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.price{
+    margin-top: 15px;
+    color: #db001b;
+    font-size: 30px;
+}
+.name{
+    color: #8A8C93;
+}
+.inf{
+    margin-top: 80px;
+}
+
+.but-red{
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 50px;
+    width: 46.5%;
+    background: #1B75CC;
+    color: white;
+    border-color: #1B75CC;
+    outline: none;
+}
+
+.but-red:hover{
+    background: #1262AF;
+    border-color: #1262AF;
+}

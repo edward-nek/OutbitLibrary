@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Эдуард - Перекуп{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="header">
+            <h3> Эдуард - перекуп</h3>
+        </div>
+        <div class="header">
+            <h2>Список авто</h2>
+        </div>
+        <div class="header">
+            <form method="LINK" action="{{ path('create_auto') }}">
+                <input class="add" type="submit" value="+ Добавить">
+            </form>
+        </div>
+        <div class="body">
+            {% for auto in autos %}
+                <div class="card-g">
+                    <div class="card-body">
+                        <div> <img class="card-image" src="{{ asset('uploads/image/' ~ auto.image) }}"> </div>
+                        <br>
+                        <div class="card-sv">{{ auto.name }}</div>
+                        <div class="card-sv">{{ auto.price }} р.</div>
+
+                        <form class="open" method="LINK" action="{{ path('single_auto', {'auto': auto.id }) }}">
+                            <input class="open-but" type="submit" value="Открыть">
+                        </form>
+
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

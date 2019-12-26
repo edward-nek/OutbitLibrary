@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ auto.name }}{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="heads-1">
+            <form method="LINK" action="{{ auto.site }}">
+                <input class="head-a" type="submit" value="{{ auto.site }}">
+            </form>
+        </div>
+        <div class="heads-2">
+            <form method="LINK" action="{{ path('auto') }}">
+                <input class="head-b" type="submit" value="Назад">
+            </form>
+        </div>
+
+        <div class="card-body">
+            <div class="ha">
+                <h2>Информация о {{ auto.name }}</h2>
+            </div>
+            <div class = "bl-ob">
+                <img class="photo" src="{{ asset('uploads/image/' ~ auto.image) }}">
+                <div>
+                    <form method="LINK" action="{{ path('update_auto', {'auto': auto.id }) }}">
+                        <input class="but-red" type="submit" value="Изменить">
+                    </form>
+                </div>
+                <div>
+                    <form method="LINK" action="{{ path('auto_delete', {'auto': auto.id }) }}">
+                        <input class="but-red" type="submit" value="Удалить">
+                    </form>
+                </div>
+            </div>
+            <div class="bl-ob">
+                <div class="price">
+                    {{ auto.price }} р.
+                </div>
+                <div class="inf">
+                    <div class="name">Описание:</div>
+                    {{ auto.info }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
