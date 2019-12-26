@@ -16,7 +16,7 @@ class AutoController extends AbstractController
 {
 
     /**
-     * @Route("/auto", name="auto")
+     * @Route("/", name="auto")
      */
     public function index()
     {
